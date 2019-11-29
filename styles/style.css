@@ -1,0 +1,725 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: 'B612', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #232526;
+}
+
+body .DevTools {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+
+body .DevTools button {
+  margin: 10px;
+  padding: 10px;
+}
+
+body header {
+  width: 80%;
+  height: 10vh;
+  margin: auto;
+}
+
+body .header2 {
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 80%;
+  padding-left: 10%;
+  padding-right: 10%;
+  height: 10vh;
+  margin: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  top: 0;
+  background: #232526;
+  z-index: 5;
+}
+
+body .header2 .logo-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+body .header2 .logo-section .logo {
+  display: block;
+  height: 5vh;
+}
+
+body .header2 nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+body .header2 nav .tab {
+  color: white;
+  text-decoration: none;
+}
+
+body .header2 nav .tab:hover {
+  opacity: 0.8;
+}
+
+body .header2 nav .burger {
+  display: none;
+}
+
+body .header2 nav .menu {
+  display: none;
+}
+
+body .main {
+  min-height: 80vh;
+  width: 80%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .main .hero {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+body .main .hero h1 {
+  background: -webkit-gradient(linear, left top, right top, from(#f590d7), color-stop(#90e1f5), to(#ebf26b));
+  background: linear-gradient(to right, #f590d7, #90e1f5, #ebf26b);
+  font-size: 80px;
+  letter-spacing: 1px;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+body .main .hero h2 {
+  margin-top: 5px;
+  font-size: 50px;
+  color: white;
+}
+
+body .main .hero .cta-projects {
+  margin-top: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 50px;
+  font-size: 15px;
+  outline: none;
+  cursor: pointer;
+  border: #ebf26b 5px solid;
+  background: #ebf26b;
+  color: black;
+  text-decoration: none;
+}
+
+body .main .hero .cta-projects:hover {
+  color: #c2f3ff;
+  background: transparent;
+  border: transparent 5px solid;
+}
+
+body .main .image-section {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .main .image-section img {
+  height: 40vh;
+  width: auto;
+  position: relative;
+  -webkit-animation: fadein 0.5s linear;
+          animation: fadein 0.5s linear;
+}
+
+body .about {
+  height: 100vh;
+  border-top: white 5vh solid;
+  margin-top: 5vh;
+  background: white;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #3d4345;
+}
+
+body .about .image-section {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+body .about .image-section .profile {
+  height: 60vh;
+  border-radius: 10px;
+  display: none;
+}
+
+body .about .intro {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+body .about .intro h1 {
+  font-size: 50px;
+  color: #f590d7;
+}
+
+body .about .intro p {
+  width: 80%;
+  font-size: 20px;
+  line-height: 40px;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+body .about .intro ul {
+  list-style: none;
+}
+
+body .services {
+  height: 50vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: url("/images/services.png") center center no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+body .services .service-container {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+body .services .service-container .service {
+  background: white;
+  border-radius: 5px;
+  height: 60%;
+  width: 60%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .services .service-container .service img {
+  height: 15vh;
+}
+
+body .services .service-container .service p {
+  width: 60%;
+}
+
+body .services .service-container .service.one {
+  left: 8vw;
+}
+
+body .services .service-container .service.three {
+  right: 8vw;
+}
+
+body .projects {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  justify-items: center;
+  padding-bottom: 20vh;
+}
+
+body .projects .intro {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .projects .intro h1 {
+  color: #ebf26b;
+  font-size: 50px;
+}
+
+body .projects .showcase {
+  width: 80%;
+  height: auto;
+  margin: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto;
+      grid-template-columns: auto auto auto;
+  grid-gap: 40px;
+}
+
+body .projects .showcase .image-container {
+  position: relative;
+}
+
+body .projects .showcase .image-container img {
+  position: relative;
+  width: 100%;
+  z-index: 3;
+  -webkit-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+}
+
+body .projects .showcase .image-container img:hover {
+  z-index: 1;
+  opacity: 0.8;
+}
+
+body .projects .showcase .image-container h2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 2;
+  color: white;
+  font-size: 25px;
+}
+
+body .contact {
+  width: 70%;
+  padding-left: 15%;
+  padding-right: 15%;
+  height: 50vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: black;
+}
+
+body .contact .intro {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+body .contact .intro h1 {
+  color: #90e1f5;
+  font-size: 50px;
+  width: 80%;
+}
+
+body .contact .intro h2 {
+  margin-top: 30px;
+  font-size: 20px;
+  width: 50%;
+  line-height: 35px;
+  font-weight: normal;
+  color: white;
+}
+
+body .contact .form {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  height: 70%;
+  width: 70%;
+  padding: 3%;
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: 'name email' 'subject subject' 'message message' 'message message' 'submit reset';
+  grid-gap: 5%;
+}
+
+body .contact .form .name {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: name;
+}
+
+body .contact .form .email {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: email;
+}
+
+body .contact .form .subject {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: subject;
+}
+
+body .contact .form .message {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: message;
+  padding-top: 3%;
+  resize: none;
+}
+
+body .contact .form .submit {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  grid-area: submit;
+  background: #ebf26b;
+}
+
+body .contact .form .submit:hover {
+  color: #ebf26b;
+}
+
+body .contact .form .reset {
+  -ms-grid-row: 5;
+  -ms-grid-column: 2;
+  grid-area: reset;
+  background: #f590d7;
+}
+
+body .contact .form .reset:hover {
+  color: #f590d7;
+}
+
+body .contact .form button {
+  margin-top: 10%;
+  outline: none;
+  cursor: pointer;
+}
+
+body .contact .form button:hover {
+  background: transparent;
+}
+
+body .contact .form input,
+body .contact .form button,
+body .contact .form textarea {
+  font-size: 15px;
+}
+
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+    top: -40px;
+  }
+  to {
+    opacity: 1;
+    top: 0;
+  }
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+    top: -40px;
+  }
+  to {
+    opacity: 1;
+    top: 0;
+  }
+}
+
+@-webkit-keyframes menufade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes menufade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes menufadeout {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes menufadeout {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@media screen and (max-width: 1329px) {
+  body .main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body .main .hero {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body .main .hero h1 {
+    margin-top: 8vh;
+  }
+  body .main .image-section img {
+    height: 35vh;
+  }
+  body .about {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body .about .image-section .profile {
+    height: 45vh;
+  }
+  body .about .intro {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body .about .intro ul {
+    font-size: 20px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  body .header2 nav {
+    -webkit-box-flex: 0;
+        -ms-flex: none;
+            flex: none;
+    display: block;
+  }
+  body .header2 nav .menu {
+    display: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    position: fixed;
+    top: 10vh;
+    width: 100vw;
+    height: 90vh;
+    background: rgba(0, 0, 0, 0.9);
+    left: 0;
+  }
+  body .header2 nav .menu .menu-tab {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  body .header2 nav .burger {
+    display: block;
+    height: 5vh;
+  }
+  body .header2 nav .burger:hover {
+    opacity: 0.8;
+  }
+  body .header2 nav .tab {
+    display: none;
+  }
+  body .services {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 130vh;
+  }
+  body .services .service-container .service {
+    height: 30vh;
+    width: 60vw;
+    margin-top: 10vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body .services .service-container .service h1 {
+    font-size: 30px;
+  }
+  body .services .service-container .service p {
+    font-size: 20px;
+  }
+  body .services .service-container .service.one {
+    left: 0;
+  }
+  body .services .service-container .service.three {
+    right: 0;
+    margin-bottom: 10vh;
+  }
+  body .projects {
+    height: 129;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  body .projects .intro {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+  body .projects .showcase {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    grid-gap: 2%;
+    width: 95%;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+  body .projects .showcase h2 {
+    width: 100%;
+    text-align: center;
+  }
+  body .contact {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 85vh;
+  }
+  body .contact .intro {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body .contact .intro h1 {
+    text-align: center;
+    margin-top: 10vh;
+  }
+  body .contact .intro h2 {
+    text-align: center;
+    width: 100%;
+    font-size: 23px;
+    font-weight: lighter;
+  }
+  body .contact .form {
+    margin-top: 5vh;
+    height: 30vh;
+    width: 90%;
+    margin-bottom: 5vh;
+  }
+}
+
+@media screen and (max-width: 501px) {
+  body .main .hero h1 {
+    font-size: 70px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
