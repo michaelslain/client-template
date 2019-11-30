@@ -223,7 +223,7 @@ body .services {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background: url("/images/services.png") center center no-repeat;
+  background: url("../images/services.png") center center no-repeat;
   background-size: cover;
   background-attachment: fixed;
 }

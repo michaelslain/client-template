@@ -1,3 +1,5 @@
+$img: '../images/services.png';
+
 * {
 	margin: 0;
 	padding: 0;
@@ -182,7 +184,7 @@ body {
 	.services {
 		height: 50vh;
 		display: flex;
-		background: url('/images/services.png') center center no-repeat;
+		background: url($img) center center no-repeat;
 		background-size: cover;
 		background-attachment: fixed;
 
